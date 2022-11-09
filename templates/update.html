@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="antiquewhite">
+    <form action="/update">
+        <div class="mb-3">
+            <label for="sid" class="form-label">ID</label>
+            <input type="number" class="form-control" id="sid" name="ID" value="{{data[0]}}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="BrandName" class="form-label">Brandname</label>
+            <input type="text" class="form-control" id="BrandName" name="Brandname" value="{{data[1]}}">
+        </div>
+        <div class="mb-3">
+            <label for="ProductName" class="form-label">Productname</label>
+            <input type="text" class="form-control" id="ProductName" name="Productname" value="{{data[2]}}">
+        </div>
+        <div class="mb-3">
+            <label for="EntryDate" class="form-label">Entrydate</label>
+            <input type="date" class="form-control" id="EntryDate" name="Entrydate" value="{{data[3]}}">
+        </div>
+        <div class="mb-3">
+            <label for="StockKg" class="form-label">stockkg</label>
+            <input type="number" class="form-control" id="StockKg" name="stockkg" value="{{data[4]}}">
+        </div>
+        <div class="mb-3">
+            <label for="PriceKg" class="form-label">Pricekg</label>
+            <input type="number" class="form-control" id="PriceKg" name="Pricekg" value="{{data[5]}}">
+        </div>
+        <div class="mb-3">
+            <label for="Discount" class="form-label">discount</label>
+            <input type="number" class="form-control" id="Discount" name="discount" value="{{data[6]}}">
+        </div>
+        <div class="mb-3">
+            <label for="FinalPrice" class="form-label">Finalprice</label>
+            <input type="number" class="form-control" id="FinalPrice" name="Finalprice" value="{{data[7]}}">
+        </div>
+        <div>
+            <button type="Submit">Update</button>
+        </div>
+    </form>
+</body>
+</html>

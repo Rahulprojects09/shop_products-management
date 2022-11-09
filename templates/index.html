@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="turquoise">
+
+    {{msg}}
+    <a href="/insert" class="btn btn-primary">Add Product</a>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Brandname</th>
+            <th>Productname</th>
+            <th>Entrydate</th>
+            <th>stockkg</th>
+            <th>Pricekg</th>
+            <th>discount</th>
+            <th>Finalprice</th>
+        </tr>
+        {%for i in data%}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            <td>{{i[5]}}</td>
+            <td>{{i[6]}}</td>
+            <td>{{i[7]}}</td>
+            <td><a href="/update/{{i[0]}}">Update</a></td>
+            <td><a href="/delete/{{i[0]}}">Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+
+
+
+</body>
+</html>
